@@ -50,6 +50,7 @@ public class ColorConverterApp extends JFrame {
         add(rLabel);
         rField = new JTextField("0");
         rField.setBounds(40, 220, 50, 25);
+        rField.setEditable(false);
         add(rField);
 
         rSlider = new JSlider(0, 255);
@@ -67,6 +68,7 @@ public class ColorConverterApp extends JFrame {
         add(gLabel);
         gField = new JTextField("0");
         gField.setBounds(40, 250, 50, 25);
+        gField.setEditable(false);
         add(gField);
 
         gSlider = new JSlider(0, 255);
@@ -84,6 +86,7 @@ public class ColorConverterApp extends JFrame {
         add(bLabel);
         bField = new JTextField("0");
         bField.setBounds(40, 280, 50, 25);
+        bField.setEditable(false);
         add(bField);
 
         bSlider = new JSlider(0, 255);
@@ -103,6 +106,7 @@ public class ColorConverterApp extends JFrame {
         add(cLabel);
         cField = new JTextField("0");
         cField.setBounds(40, 330, 50, 25);
+        cField.setEditable(false);
         add(cField);
 
         cSlider = new JSlider(0, 100);
@@ -120,6 +124,7 @@ public class ColorConverterApp extends JFrame {
         add(mLabel);
         mField = new JTextField("0");
         mField.setBounds(40, 360, 50, 25);
+        mField.setEditable(false);
         add(mField);
         mSlider = new JSlider(0, 100);
         mSlider.setBounds(100, 360, 200, 25);
@@ -136,6 +141,7 @@ public class ColorConverterApp extends JFrame {
         add(yLabel);
         yField = new JTextField("0");
         yField.setBounds(40, 390, 50, 25);
+        yField.setEditable(false);
         add(yField);
 
         ySlider = new JSlider(0, 100);
@@ -153,6 +159,7 @@ public class ColorConverterApp extends JFrame {
         add(kLabel);
         kField = new JTextField("100");
         kField.setBounds(40, 420, 50, 25);
+        kField.setEditable(false);
         add(kField);
 
         kSlider = new JSlider(0, 100);
@@ -163,6 +170,7 @@ public class ColorConverterApp extends JFrame {
             updateFromCMYK(++countC);
             --countC;
         });
+        kField.setEditable(false);
         add(kSlider);
 
         // Панель для HSV
@@ -171,6 +179,7 @@ public class ColorConverterApp extends JFrame {
         add(hLabel);
         hField = new JTextField("0");
         hField.setBounds(40, 470, 50, 25);
+        hField.setEditable(false);
         add(hField);
 
         hSlider = new JSlider(0, 360);
@@ -188,6 +197,7 @@ public class ColorConverterApp extends JFrame {
         add(sLabel);
         sField = new JTextField("0");
         sField.setBounds(40, 500, 50, 25);
+        sField.setEditable(false);
         add(sField);
 
         sSlider = new JSlider(0, 100);
@@ -205,6 +215,7 @@ public class ColorConverterApp extends JFrame {
         add(vLabel);
         vField = new JTextField("0");
         vField.setBounds(40, 530, 50, 25);
+        vField.setEditable(false);
         add(vField);
 
         vSlider = new JSlider(0, 100);
